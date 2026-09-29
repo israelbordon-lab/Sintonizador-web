@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+  color: #fff;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.glass-card {
+  width: 380px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6),
+              0 0 30px rgba(99, 102, 241, 0.15);
+  text-align: center;
+}
+
+/* Carátula / Disco animado */
+.album-art-container {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 1.2rem;
+  position: relative;
+}
+
+.album-art {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: transform 0.5s ease;
+}
+
+.playing .album-art {
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Buscador de estaciones */
+.search-box {
+  margin: 1rem 0;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Ecualizador de barras CSS */
+.equalizer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  height: 28px;
+  margin: 1rem 0;
+}
+
+.equalizer .bar {
+  width: 4px;
+  height: 20%;
+  background: #6366f1;
+  border-radius: 2px;
+  transition: height 0.3s ease;
+}
+
+.playing .equalizer .bar {
+  animation: bounce 0.8s ease-in-out infinite alternate;
+}
+
+.playing .equalizer .bar:nth-child(1) { animation-delay: 0.1s; }
+.playing .equalizer .bar:nth-child(2) { animation-delay: 0.3s; }
+.playing .equalizer .bar:nth-child(3) { animation-delay: 0.2s; }
+.playing .equalizer .bar:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0% { height: 15%; }
+  100% { height: 100%; }
+}
+
+/* Controles multimedia */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.btn-ctrl {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.btn-ctrl:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.play-main {
+  width: 60px;
+  height: 60px;
+  background: #6366f1 !important;
+  font-size: 1.3rem;
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.volume-container input {
+  width: 100%;
+  accent-color: #6366f1;
+}
+
+/* Lista de radios */
+.station-list {
+  list-style: none;
+  max-height: 160px;
+  overflow-y: auto;
+  text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.5rem;
+}
+
+.station-list li {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.station-list li:hover, .station-list li.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #818cf8;
+} * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #1e1b4b, #090d16, #020617);
+  color: #fff;
+  padding-top: max(1.5rem, env(safe-area-inset-top));
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+  overscroll-behavior-y: none;
+}
+
+.glass-card {
+  width: 100%;
+  max-width: 390px;
+  padding: 1.8rem;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6),
+              0 0 40px rgba(99, 102, 241, 0.12);
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.badge-live {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  letter-spacing: 1px;
+}
+
+.playing .badge-live {
+  background: #ef4444;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.6);
+}
+
+.btn-fav {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.btn-fav.active {
+  color: #f59e0b;
+}
+
+.album-art-container {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1rem;
+}
+
+.album-art {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.playing .album-art {
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#visualizer-canvas {
+  width: 100%;
+  height: 35px;
+  margin: 0.5rem 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn-ctrl {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-ctrl:active {
+  transform: scale(0.92);
+}
+
+.play-main {
+  width: 64px;
+  height: 64px;
+  background: #6366f1 !important;
+  font-size: 1.4rem;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.volume-container input {
+  width: 100%;
+  accent-color: #6366f1;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  outline: none;
+  font-size: 0.88rem;
+}
+
+.station-list {
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  margin-top: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.5rem;
+}
+
+.station-list li {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.station-list li.active {
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+/* Estilos para asegurar que los íconos SVG se escalen bien */
+.btn-ctrl svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  display: block;
+  pointer-events: none;
+}
+
+.play-main svg {
+  width: 28px;
+  height: 28px;
+  margin-left: 2px; /* Centrado óptico del triángulo de Play */
+}
+
+/* Quitar la apariencia nativa de los botones en Safari / iOS */
+.btn-ctrl, .play-main, button {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Forzar que no renderice fuentes de emoji de Apple */
+#play-btn, .btn-ctrl {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+}
+
+/* Estilo estricto para el contenido interno del botón de pausa/play */
+.icon-symbol {
+  display: inline-block;
+  line-height: 1;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+/* EFECTO GLOW PARA EL VISUALIZADOR DE ONDAS */
+.pro-wave-canvas {
+  width: 100%;
+  height: 90px;
+  display: block;
+  margin: 0.5rem 0;
+  border-radius: 12px;
+  background: rgba(10, 15, 29, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+
+  /* Ocultar el control de volumen en dispositivos iOS */
+.ios-hide-volume {
+  display: none !important;
+}

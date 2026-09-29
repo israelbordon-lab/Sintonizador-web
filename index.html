@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Sintonizador Web Pro</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Meta tags para iOS / Standalone App -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Radio Pro">
+  <meta name="theme-color" content="#090d16">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <div class="glass-card" id="player-card">
+    <!-- Encabezado superior -->
+    <div class="card-header">
+      <span class="badge-live" id="live-indicator">LIVE</span>
+    </div>
+
+    <!-- Album Art / Disco -->
+    <div class="album-art-container">
+      <img id="station-cover" class="album-art" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300&auto=format&fit=crop" alt="Portada de la emisora">
+    </div>
+
+    <!-- Info de la emisora -->
+    <div class="station-info">
+      <h2 id="station-name">Cargando...</h2>
+      <p id="station-genre">Sintonizando señal</p>
+    </div>
+
+    <!-- Visualizador de audio (Canvas) -->
+     <canvas id="visualizer-canvas" class="pro-wave-canvas"></canvas>
+    <canvas id="visualizer-canvas"></canvas>
+
+    <!-- Controles Principales -->
+    <div class="controls">
+      <button id="play-btn" class="btn-ctrl play-main" aria-label="Reproducir/Pausar">▶</button>
+    </div>
+
+    <!-- Slider de volumen -->
+    <div class="volume-container">
+      <span class="vol-icon">🔊</span>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.8">
+    </div>
+
+    <!-- Lista de Estaciones -->
+    <ul id="station-list" class="station-list"></ul>
+    <!-- Pie de página con créditos de autoría -->
+<footer style="margin-top: 2rem; text-align: center; padding: 1rem; opacity: 0.7; font-size: 0.85rem; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+  <p style="margin: 0; color: rgba(255, 255, 255, 0.8); font-family: system-ui, -apple-system, sans-serif; letter-spacing: 0.5px;">
+    by <strong style="color: #6366f1; font-weight: 600;">Israel Bordon Labs</strong>
+  </p>
+</footer>
+  </div>
+
+  <audio id="audio-player" crossorigin="anonymous"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
