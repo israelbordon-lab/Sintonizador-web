@@ -101,7 +101,7 @@ const customStations = [
     url: "https://24383.live.streamtheworld.com/ROCKANDPOPAAC_SC"
   },
   {
-    name: "Radio Rock & Pop",
+    name: "Radio UNE",
     genre: "FM 97.1",
     url: "https://streaming.provinciaradio.com.ar:3352/fm"
   },
