@@ -141,8 +141,8 @@ const customStations = [
     url: "https://edge03.radiohdvivo.com/los40"
   },
    {
-    name: "Radio Los 40",
-    genre: "FM 105.5",
+    name: "Radio Milenium ",
+    genre: "FM 106.7",
     url: "https://sonicpanel.hostradios.com/8002/stream"
   },
   {
