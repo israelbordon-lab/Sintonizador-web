@@ -6,6 +6,11 @@ const customStations = [
     url: "http://cdn.instream.audio:9288/stream"
   },
   {
+    name: "Radio Argentina",
+    genre: "AM 570",
+    url: "https://server.laradio.online:15224/live.mp3"
+  },
+  {
     name: "Radio Continental",
     genre: "AM 590",
     url: "https://edge03.radiohdvivo.com/continental"
