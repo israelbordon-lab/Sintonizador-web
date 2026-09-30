@@ -140,6 +140,11 @@ const customStations = [
     genre: "FM 103.1",
     url: "https://26673.live.streamtheworld.com/DSPORTSRADIOAAC_SC"
   },
+   {
+    name: "Radio Ameghino",
+    genre: "FM 103.3",
+    url: "https://streaming.radiosenlinea.com.ar/8458/stream"
+  },
   {
     name: "Radio ONE",
     genre: "FM 103.7",
