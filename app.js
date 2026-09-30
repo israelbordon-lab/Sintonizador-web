@@ -41,6 +41,11 @@ const customStations = [
     url: "https://stream-280.surfernetwork.com/sxpab7rt7hhvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJzeHBhYjdydDdoaHZ2IiwiaG9zdCI6InN0cmVhbS0yODAuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiJWcm9iZ3Nyd1IwcS1nYU5IaDZJV1ZnIiwiaWF0IjoxNzkwMTAwODI4LCJleHAiOjE3OTAxMDA4ODh9.jcxwlXb7oHSvKns6rcbuSTpM9drRek2t0CEagB6sNe0"
   },
   {
+    name: "Radio El Destape",
+    genre: "AM 1070",
+    url: "https://ipanel.instream.audio/8004/stream"
+  },
+  {
     name: "Radio UNM",
     genre: "FM 88.7",
     url: "https://radiostreamingserver.com.ar/stream/ciudadunmradio"
