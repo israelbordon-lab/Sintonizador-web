@@ -101,6 +101,11 @@ const customStations = [
     url: "https://24383.live.streamtheworld.com/ROCKANDPOPAAC_SC"
   },
   {
+    name: "Radio Rock & Pop",
+    genre: "FM 97.1",
+    url: "https://streaming.provinciaradio.com.ar:3352/fm"
+  },
+  {
     name: "Radio Vale",
     genre: "FM 97.5",
     url: "https://vale.stweb.tv/vale/live/playlist.m3u8"
