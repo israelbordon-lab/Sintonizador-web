@@ -11,11 +11,6 @@ const customStations = [
     url: "http://cdn.instream.audio:9288/stream"
   },
   {
-    name: "Radio Cristiana",
-    genre: "FM 95.7",
-    url: "https://genexservicios.com:8098/;?1790778843732"
-  },
-  {
     name: "Radio Continental",
     genre: "AM 590",
     url: "https://edge03.radiohdvivo.com/continental"
