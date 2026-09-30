@@ -45,6 +45,11 @@ const customStations = [
     genre: "AM 1070",
     url: "https://ipanel.instream.audio/8004/stream"
   },
+   {
+    name: "Radio de La Provincia de Buenos Aires",
+    genre: "AM 1270",
+    url: "https://streaming.provinciaradio.com.ar:7008/am"
+  },
   {
     name: "Radio UNM",
     genre: "FM 88.7",
