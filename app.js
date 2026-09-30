@@ -47,7 +47,7 @@ const customStations = [
   },
     {
     name: "Radio Rey de Reyes Gospel",
-    genre: "FM 88.9",
+    genre: "FM 88.1",
     url: "https://ohradio.cc/8092/stream"
   },
   {
