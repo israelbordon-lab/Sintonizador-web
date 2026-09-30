@@ -13,7 +13,7 @@ const customStations = [
   {
     name: "Radio Belgrano ",
     genre: "AM 570",
-    url: "https://server.laradio.online:15223/live.mp3"
+    url: "https://genexservicios.com:8098/;?1790778843732"
   },
   {
     name: "Radio Continental",
