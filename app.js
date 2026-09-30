@@ -71,9 +71,9 @@ const customStations = [
     url: "https://server1.stweb.tv/rcvos/live/playlist.m3u8"
   },
   {
-    name: "Radio Vorterix",
-    genre: "FM 92.1",
-    url: "https://ice2.edge-apps.net/radio1_high-20057.audio"
+    name: "Radio Rey de Reyes Gospel",
+    genre: "FM 88.9",
+    url: "https://ohradio.cc/8092/stream"
   },
   {
     name: "Radio Disney",
