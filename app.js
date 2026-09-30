@@ -125,11 +125,6 @@ const customStations = [
     genre: "Online",
     url: "https://streamlky.alsolnet.com/radiozonica"
   }
-   {
-    name: "Radio Futurock",
-    genre: "Online",
-    url: "https://us-b4-p-e-jn18-audio.cdn.mdstrm.com/live-audio/5942a3a05fa68cca2efb4264/5d9d019112cbbb45d6a50960/playlist.m3u8?aid=5942a3a05fa68cca2efb4264&pid=45t5JhUVmD9j94Io8jTOMLFAQrJG8w7l&sid=XWVj4lC8DEBIw9uk79ER5miQt8Zqs8b6&uid=Go3BVCG7XK3t2RhKXwVBFw4Lde49UFs2&es=us-b4-p-e-jn18-audio.cdn.mdstrm.com&ote=1790872032256&ot=IDIYXCTYXkBsKAgxIjES7Q&proto=https&pz=us&cP=128000"
-  }
   
 ];
 
