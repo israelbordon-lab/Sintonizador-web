@@ -25,6 +25,21 @@ const customStations = [
     genre: "AM 750",
     url: "https://26573.live.streamtheworld.com/AM750AAC_SC"
   },
+   {
+    name: "Radio Mitre",
+    genre: "AM 790",
+    url: "https://27573.live.streamtheworld.com/AM790_56AAC.aac"
+  },
+   {
+    name: "Radio General Belgrano",
+    genre: "AM 840",
+    url: "https://streaming2.locucionar.com/proxy/radiowall1?mp=/stream"
+  },
+   {
+    name: "Radio Federal",
+    genre: "AM 810",
+    url: "https://radio.garden/api/ara/content/listen/qIlFEyC4/channel.mp3?hl=es&1790795985277"
+  },
   {
     name: "Radio Nacional Buenos Aires",
     genre: "AM 870",
@@ -59,6 +74,11 @@ const customStations = [
     name: "Radio Buenos Aires",
     genre: "AM 1350",
     url: "https://nl.digitalrm.pt:8052/stream"
+  },
+     {
+    name: "Radio AM con Vos",
+    genre: "AM 1420",
+    url: "https://radio.garden/api/ara/content/listen/5NZBGE9f/channel.mp3?hl=es&1790795829003"
   },
   {
     name: "Radio UNM",
