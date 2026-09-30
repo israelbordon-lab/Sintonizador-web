@@ -140,6 +140,11 @@ const customStations = [
     genre: "FM 105.5",
     url: "https://edge03.radiohdvivo.com/los40"
   },
+   {
+    name: "Radio Los 40",
+    genre: "FM 105.5",
+    url: "https://sonicpanel.hostradios.com/8002/stream"
+  },
   {
     name: "Radio Zonica",
     genre: "Online",
