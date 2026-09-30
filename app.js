@@ -196,6 +196,11 @@ const customStations = [
     url: "https://streaming.radiosenlinea.com.ar/8458/stream"
   },
   {
+    name: "Radio Evolution (Moreno)",
+    genre: "FM 103.3",
+    url: "https://stream.hamop.com.ar/8460/stream"
+  },
+  {
     name: "Radio ONE",
     genre: "FM 103.7",
     url: "https://one.stweb.tv/one/live/playlist.m3u8"
