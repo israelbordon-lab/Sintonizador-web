@@ -55,6 +55,11 @@ const customStations = [
     genre: "AM 1270",
     url: "https://streaming.provinciaradio.com.ar:7008/am"
   },
+   {
+    name: "Radio Buenos Aires",
+    genre: "AM 1350",
+    url: "https://nl.digitalrm.pt:8052/stream"
+  },
   {
     name: "Radio UNM",
     genre: "FM 88.7",
