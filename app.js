@@ -153,7 +153,7 @@ const customStations = [
    {
     name: "Radio Vorterix",
     genre: "FM 97.1",
-    url: "https://ice2.edge-apps.net/radio1_high-20057.audio"
+    url: "https://radio.plandos.com:7025;"
   },
   {
     name: "Radio UNE",
