@@ -30,6 +30,11 @@ const customStations = [
     genre: "AM 790",
     url: "https://27573.live.streamtheworld.com/AM790_56AAC.aac"
   },
+  {
+    name: "Radio Del Pueblo",
+    genre: "AM 830",
+    url: "https://streaming6.locucionar.com:24248/stream"
+  },
    {
     name: "Radio General Belgrano",
     genre: "AM 840",
