@@ -12,7 +12,7 @@ const customStations = [
   },
   {
     name: "Radio Cristiana",
-    genre: "AM 570",
+    genre: "FM 95.7",
     url: "https://genexservicios.com:8098/;?1790778843732"
   },
   {
@@ -79,6 +79,11 @@ const customStations = [
     name: "Radio Disney",
     genre: "FM 94.3",
     url: "https://26683.live.streamtheworld.com/DISNEY_ARG_BA.mp3?dist=web-radiodisney&bundle-id=com.disney.radiodisneybrazil_goo"
+  },
+  {
+    name: "Radio Cristiana",
+    genre: "FM 95.7",
+    url: "https://genexservicios.com:8098/;?1790778843732"
   },
   {
     name: "Radio Rock & Pop",
