@@ -566,14 +566,3 @@ function applyIOSVolumePolicy() {
 
 // Ejecutar automáticamente al cargar la aplicación
 document.addEventListener('DOMContentLoaded', applyIOSVolumePolicy);
-
-{
-  name: "Radio 1",
-  // Se antepone el proxy para saltar las restricciones de CORS de edge-apps:
-  url: "https://corsproxy.io/?" + encodeURIComponent("https://ice2.edge-apps.net/radio1_high-20057.audio")
-}
-
-// Probar las variantes directas sin formato .audio:
-"https://ice2.edge-apps.net/radio1_high-20057"
-// O si es la señal de Radio 1 (Europa/Latam), su stream directo MP3:
-"https://stream.edge-apps.net/radio1"
