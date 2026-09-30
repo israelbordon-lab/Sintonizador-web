@@ -1,11 +1,6 @@
 // 1. LISTA DE EMISORAS MP3
 const customStations = [
   {
-    name: "Radio Rivadavia (Buenos Aires)",
-    genre: "AM 630",
-    url: "https://27353.live.streamtheworld.com/RIVADAVIAAAC_SC?dist=triton-widget&pname=tdwidgets"
-  },
-  {
     name: "Radio Somos",
     genre: "AM 530",
     url: "http://cdn.instream.audio:9288/stream"
@@ -17,7 +12,7 @@ const customStations = [
   },
   {
     name: "Radio Rivadavia",
-    genre: "AM 590",
+    genre: "AM 630",
     url: "https://27353.live.streamtheworld.com/RIVADAVIAAAC_SC?dist=triton-widget&pname=tdwidgets"
   },
   {
@@ -50,15 +45,10 @@ const customStations = [
     genre: "FM 88.7",
     url: "https://radiostreamingserver.com.ar/stream/ciudadunmradio"
   },
-  {
-    name: "Radio Pública Moreno ",
-    genre: "FM 90.7",
-    url: "https://stream-179.surfernetwork.com/9m7mxee7yf9uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI5bTdteGVlN3lmOXV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiJ6U3dTTG5DMFFQLXFlRFZvbkx1SDJ3IiwiaWF0IjoxNzkwMTAxMjU3LCJleHAiOjE3OTAxMDEzMTd9.awTct_S79bdP8HQ-MQtEXa4zWd8cbSVi9XkKWsRYDtk"
-  },
-  {
-    name: "Radio Blue",
-    genre: "FM 100.7",
-    url: "https://29326.live.streamtheworld.com/BLUE_FM_100_7AAC_SC?pname=TDSdk"
+    {
+    name: "Radio Rey de Reyes Gospel",
+    genre: "FM 88.9",
+    url: "https://ohradio.cc/8092/stream"
   },
   {
     name: "Radio Con Vos",
@@ -66,9 +56,9 @@ const customStations = [
     url: "https://server1.stweb.tv/rcvos/live/playlist.m3u8"
   },
   {
-    name: "Radio Rey de Reyes Gospel",
-    genre: "FM 88.9",
-    url: "https://ohradio.cc/8092/stream"
+    name: "Radio Pública Moreno ",
+    genre: "FM 90.7",
+    url: "https://stream-179.surfernetwork.com/9m7mxee7yf9uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI5bTdteGVlN3lmOXV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiJ6U3dTTG5DMFFQLXFlRFZvbkx1SDJ3IiwiaWF0IjoxNzkwMTAxMjU3LCJleHAiOjE3OTAxMDEzMTd9.awTct_S79bdP8HQ-MQtEXa4zWd8cbSVi9XkKWsRYDtk"
   },
   {
     name: "Radio El Cambio",
