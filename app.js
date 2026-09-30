@@ -11,7 +11,7 @@ const customStations = [
     url: "http://cdn.instream.audio:9288/stream"
   },
   {
-    name: "Radio Belgrano ",
+    name: "Radio Cristiana",
     genre: "AM 570",
     url: "https://genexservicios.com:8098/;?1790778843732"
   },
