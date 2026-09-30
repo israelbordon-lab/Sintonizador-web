@@ -71,6 +71,11 @@ const customStations = [
     url: "https://ohradio.cc/8092/stream"
   },
   {
+    name: "Radio El Cambio",
+    genre: "FM 92.5",
+    url: "https://streaming01.radiosenlinea.com.ar:10639/stream"
+  },
+  {
     name: "Radio Disney",
     genre: "FM 94.3",
     url: "https://26683.live.streamtheworld.com/DISNEY_ARG_BA.mp3?dist=web-radiodisney&bundle-id=com.disney.radiodisneybrazil_goo"
