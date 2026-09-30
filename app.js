@@ -8,7 +8,7 @@ const customStations = [
   {
     name: "Radio Argentina",
     genre: "AM 570",
-    url: "https://server.laradio.online:15224/live.mp3"
+    url: "https://server.laradio.online:15224/live.m3u8"
   },
   {
     name: "Radio Continental",
