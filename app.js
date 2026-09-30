@@ -135,6 +135,11 @@ const customStations = [
     genre: "FM 94.3",
     url: "https://26683.live.streamtheworld.com/DISNEY_ARG_BA.mp3?dist=web-radiodisney&bundle-id=com.disney.radiodisneybrazil_goo"
   },
+   {
+    name: "Radio Ds Horizonte (Moreno)",
+    genre: "FM 94.5",
+    url: "https://streaming.radiosenlinea.com.ar/9058/stream"
+  },
   {
     name: "Radio Cristiana",
     genre: "FM 95.7",
