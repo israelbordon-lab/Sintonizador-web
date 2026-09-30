@@ -210,6 +210,11 @@ const customStations = [
     genre: "FM 105.5",
     url: "https://edge03.radiohdvivo.com/los40"
   },
+  {
+    name: "Radio Retro Hits",
+    genre: "FM 105.7",
+    url: "https://streaming.escuchanosonline.com:7000/;"
+  },
    {
     name: "Radio Milenium ",
     genre: "FM 106.7",
