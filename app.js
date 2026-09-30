@@ -131,6 +131,11 @@ const customStations = [
     url: "https://one.stweb.tv/one/live/playlist.m3u8"
   },
   {
+    name: "Radio Urbana Play",
+    genre: "FM 103.7",
+    url: "https://live-ar1.cdnrad.com/hls/radio-285/live.m3u8"
+  },
+  {
     name: "Radio Los 40",
     genre: "FM 105.5",
     url: "https://edge03.radiohdvivo.com/los40"
