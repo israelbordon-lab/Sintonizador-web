@@ -132,7 +132,7 @@ const customStations = [
   },
   {
     name: "Radio Urbana Play",
-    genre: "FM 103.7",
+    genre: "FM 104.7",
     url: "https://live-ar1.cdnrad.com/hls/radio-285/live.m3u8"
   },
   {
