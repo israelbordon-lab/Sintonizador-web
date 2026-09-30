@@ -85,6 +85,11 @@ const customStations = [
     genre: "FM 92.5",
     url: "https://streaming01.radiosenlinea.com.ar:10639/stream"
   },
+  {
+    name: "Radio Ciudad Ameghino",
+    genre: "FM 93.3",
+    url: "https://streaming01.radiosenlinea.com.ar:10639/stream"
+  },
    {
     name: "Radio Nacional Rock",
     genre: "FM 93.7",
