@@ -78,7 +78,7 @@ const customStations = [
    {
     name: "Radio Nacional Rock",
     genre: "FM 93.7",
-    url: "https://streaming01.radiosenlinea.com.ar:10639/stream"
+    url: "https://sa.mp3.icecast.magma.edge-access.net/sc_rad39"
   },
   {
     name: "Radio Disney",
