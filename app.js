@@ -61,6 +61,11 @@ const customStations = [
     url: "https://server1.stweb.tv/rcvos/live/playlist.m3u8"
   },
   {
+    name: "Radio Delta",
+    genre: "FM 90.3",
+    url: "https://cdn.instream.audio/:9069/stream"
+  },
+  {
     name: "Radio Pública Moreno ",
     genre: "FM 90.7",
     url: "https://stream-179.surfernetwork.com/9m7mxee7yf9uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI5bTdteGVlN3lmOXV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiJ6U3dTTG5DMFFQLXFlRFZvbkx1SDJ3IiwiaWF0IjoxNzkwMTAxMjU3LCJleHAiOjE3OTAxMDEzMTd9.awTct_S79bdP8HQ-MQtEXa4zWd8cbSVi9XkKWsRYDtk"
