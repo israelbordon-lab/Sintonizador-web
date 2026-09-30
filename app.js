@@ -145,6 +145,11 @@ const customStations = [
     genre: "FM 95.9",
     url: "https://24383.live.streamtheworld.com/ROCKANDPOPAAC_SC"
   },
+   {
+    name: "Radio Vorterix",
+    genre: "FM 97.1",
+    url: "https://ice2.edge-apps.net/radio1_high-20057.audio"
+  },
   {
     name: "Radio UNE",
     genre: "FM 97.1",
